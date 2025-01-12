@@ -1,62 +1,87 @@
 # 📚 Personalized Study Planner
 
-## Overview
+## 🌟 Overview
 
 Personalized Study Planner is a simple, intuitive web application designed to help students and learners organize and track their study tasks efficiently. With a clean and friendly interface, this app makes study planning enjoyable and straightforward.
 
-## 🌟 Features
+## ✨ Key Features
 
-- **Easy Task Creation**: Quickly add study tasks with a name and specific time
-- **Task Tracking**: Mark tasks as completed to monitor your progress
-- **Local Storage**: Tasks are saved in your browser, so you won't lose your study plan
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
+### 1. Task Management
+- Create detailed study tasks with:
+  - Task name
+  - Scheduled time
+  - Study duration
+  - Category
+
+### 2. Enhanced Tracking
+- Mark tasks as completed
+- Edit existing tasks
+- Delete tasks
+- Start/stop study timer
+- Track actual study time
+
+### 3. Categorization
+- Predefined categories
+- Add custom study categories
+- Organize tasks by subject or type
+
+### 4. Data Flexibility
+- Export tasks to JSON
+- Import tasks from JSON
+- Persistent storage using localStorage
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional installations required!
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- No additional installations required
 
 ### Installation
-
-1. Clone the repository or download the `index.html` file
-2. Open the file directly in your web browser
+1. Clone the repository or download the project files
+2. Open `index.html` in your web browser
 3. Start planning your study sessions!
 
 ## 🎓 How to Use
 
-1. **Add a Task**
-   - Enter the name of your study task in the first input field
-   - Select the time you plan to study
-   - Click "Add Task" button
+### Adding a Task
+1. Enter task name
+2. Select study time
+3. (Optional) Set study duration
+4. Choose or create a category
+5. Click "Add Task"
 
-2. **Track Progress**
-   - Each task appears as a card in the task list
-   - Click "Mark as Completed" when you finish a task
-   - The progress bar will update to show completion
+### Task Actions
+- **Edit**: Modify task details
+- **Delete**: Remove a task
+- **Timer**: Track actual study time
+- **Mark Completed**: Update task status
 
-## 💡 Tips
+### Data Management
+- **Export**: Save tasks to a JSON file
+- **Import**: Load tasks from a previously exported file
 
-- Plan your tasks in advance
-- Be specific about what you want to study
-- Use the completion feature to stay motivated
-- Refresh the page to see your saved tasks
-
-## 🛠 Technologies Used
+## 🛠 Technologies
 
 - HTML5
-- CSS3 (with Tailwind CSS)
+- CSS3
 - Vanilla JavaScript
 - LocalStorage API
+- Tailwind CSS (for utility classes)
 
 ## 🌈 Design Philosophy
 
-The app follows a casual, friendly design approach:
-- Soft, approachable color palette
-- Playful typography
-- Subtle animations
-- User-friendly interactions
+- Casual and friendly UI
+- Intuitive user experience
+- Responsive design
+- Minimal, clean interface
+
+## 🔮 Future Roadmap
+
+- [ ] Implement task prioritization
+- [ ] Add study session analytics
+- [ ] Create data visualization
+- [ ] Develop mobile app version
+- [ ] Add cloud sync functionality
 
 ## 🤝 Contributing
 

@@ -12,9 +12,18 @@
   <div id="app">
     <h1>Personalized Study Planner</h1>
     <div id="task-input" class="mb-6">
-      <input type="text" id="task-name" placeholder="Enter study task" />
-      <input type="time" id="task-time" />
+      <input type="text" id="task-name" placeholder="Enter study task" required />
+      <input type="time" id="task-time" required />
+      <input type="number" id="task-duration" placeholder="Duration (minutes)" min="0" />
+      <select id="task-category">
+        <!-- Categories will be dynamically populated -->
+      </select>
+      <button onclick="addCategory()" class="btn-add-category">+ Category</button>
       <button id="add-task-btn" class="bg-blue-500 text-white">Add Task</button>
+    </div>
+    <div class="task-controls">
+      <button onclick="exportTasks()" class="btn-export">Export Tasks</button>
+      <button onclick="importTasks()" class="btn-import">Import Tasks</button>
     </div>
     <div id="task-list" class="task-list"></div>
   </div>
