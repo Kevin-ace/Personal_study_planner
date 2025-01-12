@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #6A5ACD;  /* Soft purple */
+    --secondary-color: #FF6B6B; /* Soft coral */
+    --background-color: #F4F1DE; /* Warm off-white */
+    --text-color: #2C3E50; /* Dark slate */
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;  /* Playful, rounded font */
+    background-color: var(--background-color);
+    padding: 30px 10px;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  #app {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;  /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  #app:hover {
+    transform: scale(1.02);  /* Subtle hover effect */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  #task-input input, #task-input button {
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;  /* More rounded inputs */
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  #task-input input:focus, #task-input button:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 90, 205, 0.2);
+  }
+  
+  .task-card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary-color);
+    transition: all 0.3s ease;
+  }
+  
+  .task-card:hover {
+    transform: translateX(10px);
+  }
+  
+  .task-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar .completed {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .task-actions button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-completed {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  
+  .btn-completed:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .task-card {
+    animation: fadeIn 0.5s ease;
+  }
